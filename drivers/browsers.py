@@ -11,22 +11,22 @@ chrome_option = Options()
 chrome_option.add_experimental_option('detach', True)
 #It will ignore the internal background calls and noise which is not from selenium
 chrome_option.add_experimental_option("excludeSwitches", ["enable-logging"])
-chrome_driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_option)
-chrome_driver.maximize_window()
+driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_option)
+driver.maximize_window()
 
 
 # from selenium.webdriver.firefox.service import Service
 # from selenium.webdriver.firefox.options import Options
 # firefox_option = Options()
 # firefox_option.set_preference('detach', True)
-# firefox_driver = webdriver.Chrome(service=Service(GeckoDriverManager().install()), options=chrome_option)
-# firefox_driver.maximize_window()
+# driver = webdriver.Chrome(service=Service(GeckoDriverManager().install()), options=chrome_option)
+# driver.maximize_window()
 
 
 # from selenium.webdriver.edge.service import Service
 # from selenium.webdriver.edge.options import Options
 # edge_option = Options()
 # edge_option.add_experimental_option('detach', True)
-# edge_driver = webdriver.Edge(service=Service(EdgeChromiumDriverManager().install()), options=edge_option)
-# edge_driver.maximize_window()
+# driver = webdriver.Edge(service=Service(EdgeChromiumDriverManager().install()), options=edge_option)
+# driver.maximize_window()
 
